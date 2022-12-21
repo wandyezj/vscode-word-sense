@@ -1,0 +1,58 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+    "files.eol": "\n",
+    "editor.renderWhitespace": "all",
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+    "extensions.ignoreRecommendations": true,
+    "files.associations": { "*.json": "jsonc" },
+
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs": "active",
+
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+
+    "prettier.configPath": "config/prettier.json",
+
+    "eslint.options": {
+        "configFile": "config/eslint.json",
+        "resolvePluginsRelativeTo": "${workspaceFolder}"
+    },
+
+    "markdownlint.config": {
+        "extends": "./config/markdownlint.json"
+    },
+
+    "cSpell.words": [
+        "Datamuse",
+        "haikus",
+        "linebreak",
+        "markdownlint",
+        "prettierrc",
+        "vsix"
+    ],
+
+    "files.exclude": {
+        "node_modules": true,
+        "out": false // set this to true to hide the "out" folder with the compiled JS files
+    },
+
+    "search.exclude": {
+        "out": true // set this to false to include "out" folder in search results
+    },
+    // Turn off tsc task auto detection since we have the necessary tasks as npm scripts
+    "typescript.tsc.autoDetect": "off"
+}
